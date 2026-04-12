@@ -1,5 +1,5 @@
 const ArcReactor = () => (
-  <div className="relative w-64 h-64 mx-auto flex items-center justify-center">
+  <div className="relative w-44 h-44 sm:w-56 sm:h-56 md:w-64 md:h-64 mx-auto flex items-center justify-center">
     {/* Ambient Outer Glow */}
     <div className="absolute inset-0 bg-primary/20 blur-[50px] rounded-full mix-blend-screen border-none pointer-events-none" />
     

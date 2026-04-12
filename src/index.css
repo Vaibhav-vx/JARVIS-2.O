@@ -40,8 +40,12 @@
   body {
     @apply bg-background text-foreground;
     font-family: 'Rajdhani', sans-serif;
-    cursor: none;
     overflow-x: hidden;
+  }
+  @media (pointer: fine) {
+    body {
+      cursor: none;
+    }
   }
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Orbitron', sans-serif;
@@ -344,12 +348,8 @@
     will-change: opacity;
   }
   .boot-bar {
-    width: 300px;
-    height: 2px;
-    background: hsl(190 100% 50% / 0.1);
-    border-radius: 2px;
-    overflow: hidden;
-    margin-top: 20px;
+    width: 250px;
+    max-width: 80vw;
   }
   .boot-bar-fill {
     height: 100%;

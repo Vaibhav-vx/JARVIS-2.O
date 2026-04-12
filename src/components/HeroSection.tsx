@@ -51,10 +51,10 @@ const HeroSection = () => {
 
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden pt-16">
-      <div className="relative z-10 text-center px-4">
+      <div className="relative z-10 text-center px-4 w-full max-w-lg sm:max-w-2xl md:max-w-4xl mx-auto">
         <ArcReactor />
 
-        <h1 className="font-orbitron text-5xl md:text-7xl font-black mt-8 tracking-wider">
+        <h1 className="font-orbitron text-4xl sm:text-5xl md:text-7xl font-black mt-6 sm:mt-8 tracking-wider leading-tight">
           {title.split("").map((char, i) => (
             <span
               key={i}
@@ -70,41 +70,41 @@ const HeroSection = () => {
           ))}
         </h1>
 
-        <p className="font-orbitron text-xl md:text-2xl text-accent mt-3 tracking-widest">
+        <p className="font-orbitron text-base sm:text-xl md:text-2xl text-accent mt-3 tracking-widest">
           BUILD-A-THON 2026
         </p>
-        <p className="font-mono text-sm text-muted-foreground mt-2 tracking-wider">
+        <p className="font-mono text-xs sm:text-sm text-muted-foreground mt-2 tracking-wider px-2">
           Powered by SWDC TECHNICAL CLUB — SLRTCE
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+        <div className="flex flex-col xs:flex-row sm:flex-row gap-3 sm:gap-4 justify-center mt-6 sm:mt-8">
           <a
             href="https://forms.gle/9goi52ZgufXZneBk7"
             target="_blank"
             rel="noopener noreferrer"
-            className="jarvis-btn register-pulse text-sm"
+            className="jarvis-btn register-pulse text-sm px-6 py-3"
           >
             Register Now
           </a>
-          <a href="#about" className="jarvis-btn-gold text-sm">
+          <a href="#about" className="jarvis-btn-gold text-sm px-6 py-3">
             Explore Event
           </a>
         </div>
 
         {/* Countdown */}
-        <div className="flex justify-center gap-4 sm:gap-8 mt-12">
+        <div className="flex justify-center gap-2 sm:gap-4 md:gap-8 mt-8 sm:mt-12">
           {[
             { val: time.d, label: "Days" },
-            { val: time.h, label: "Hours" },
-            { val: time.m, label: "Minutes" },
-            { val: time.s, label: "Seconds" },
+            { val: time.h, label: "Hrs" },
+            { val: time.m, label: "Min" },
+            { val: time.s, label: "Sec" },
           ].map((t) => (
-            <div key={t.label} className="jarvis-panel p-3 sm:p-4 min-w-[70px]">
+            <div key={t.label} className="jarvis-panel p-2 sm:p-3 md:p-4 min-w-[58px] sm:min-w-[70px]">
               <div className="flex justify-center gap-0.5">
                 <FlipDigit value={t.val[0]} />
                 <FlipDigit value={t.val[1]} />
               </div>
-              <div className="font-mono text-[10px] sm:text-xs text-muted-foreground uppercase tracking-wider mt-1">
+              <div className="font-mono text-[9px] sm:text-[10px] md:text-xs text-muted-foreground uppercase tracking-wider mt-1">
                 {t.label}
               </div>
             </div>

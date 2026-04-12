@@ -11,18 +11,18 @@ const RegisterSection = () => {
   const { ref, revealed } = useScrollReveal();
 
   return (
-    <section id="register" className="py-20 px-4">
+    <section id="register" className="py-16 sm:py-20 px-4">
       <div ref={ref} className={`section-reveal container mx-auto max-w-3xl text-center ${revealed ? "revealed" : ""}`}>
         <SectionHeading text="INITIATE REGISTRATION" />
-        <p className="font-rajdhani text-lg text-foreground mb-4">
+        <p className="font-rajdhani text-base sm:text-lg text-foreground mb-4">
           Form your team and register before the deadline. Team size: <span className="text-primary">2–4 members</span>.
         </p>
-        <p className="font-mono text-sm text-muted-foreground mb-8">
+        <p className="font-mono text-xs sm:text-sm text-muted-foreground mb-6 sm:mb-8">
           Registration Deadline: 12th April 2026, 11:59 PM
         </p>
-        <div className="flex flex-wrap justify-center gap-3 mb-10">
+        <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-8 sm:mb-10">
           {chips.map((c) => (
-            <span key={c} className="font-mono text-xs jarvis-panel px-4 py-2 text-muted-foreground">
+            <span key={c} className="font-mono text-[10px] sm:text-xs jarvis-panel px-3 sm:px-4 py-2 text-muted-foreground">
               {c}
             </span>
           ))}
@@ -31,7 +31,7 @@ const RegisterSection = () => {
           href="https://forms.gle/9goi52ZgufXZneBk7"
           target="_blank"
           rel="noopener noreferrer"
-          className="jarvis-btn register-pulse text-base px-12 py-4 inline-block"
+          className="jarvis-btn register-pulse text-sm sm:text-base px-8 sm:px-12 py-3 sm:py-4 inline-block"
         >
           REGISTER NOW
         </a>

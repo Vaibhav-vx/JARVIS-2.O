@@ -54,7 +54,7 @@ const JarvisBackground = () => {
       <div className="fixed inset-0 pointer-events-none z-[9991] bg-[radial-gradient(circle_min(80vw,50vh)_at_50%_50%,transparent_50%,rgba(0,3,10,0.8)_100%)] mix-blend-multiply" />
 
       {/* HUD Left Side Data */}
-      <div className="fixed left-0 top-0 bottom-0 w-32 md:w-64 border-r border-[#00d4ff]/10 bg-gradient-to-r from-[#00d4ff]/5 to-transparent pointer-events-none z-0 flex flex-col justify-between py-12 px-4 opacity-30 md:opacity-50">
+      <div className="fixed left-0 top-0 bottom-0 w-32 md:w-64 border-r border-[#00d4ff]/10 bg-gradient-to-r from-[#00d4ff]/5 to-transparent pointer-events-none z-0 flex-col justify-between py-12 px-4 opacity-50 hidden md:flex">
         <div className="flex flex-col gap-4">
           <div className="text-[10px] sm:text-xs font-mono text-[#00d4ff]">SYS.STATUS = [ONLINE]</div>
           <div className="h-0.5 w-full bg-[#00d4ff]/40"></div>
@@ -72,7 +72,7 @@ const JarvisBackground = () => {
       </div>
 
       {/* HUD Right Side Data */}
-      <div className="fixed right-0 top-0 bottom-0 w-32 md:w-64 border-l border-[#00d4ff]/10 bg-gradient-to-l from-[#00d4ff]/5 to-transparent pointer-events-none z-0 flex flex-col items-end justify-between py-12 px-4 opacity-30 md:opacity-50">
+      <div className="fixed right-0 top-0 bottom-0 w-32 md:w-64 border-l border-[#00d4ff]/10 bg-gradient-to-l from-[#00d4ff]/5 to-transparent pointer-events-none z-0 flex-col items-end justify-between py-12 px-4 opacity-50 hidden md:flex">
         <div className="flex flex-col gap-2 items-end w-full">
           <div className="text-[10px] sm:text-xs font-mono text-[#00d4ff] text-right">SEC.PROTOCOL: ALPHA</div>
           <div className="h-0.5 w-full bg-[#00d4ff]/40"></div>

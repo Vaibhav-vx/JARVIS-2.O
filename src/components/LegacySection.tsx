@@ -56,11 +56,11 @@ const ScrambleCounter = ({ target, suffix, label }: { target: number; suffix: st
   }, [target]);
 
   return (
-    <div ref={ref} className="jarvis-panel p-6 text-center">
-      <div className="font-orbitron text-4xl md:text-5xl font-black text-primary">
+    <div ref={ref} className="jarvis-panel p-4 sm:p-6 text-center">
+      <div className="font-orbitron text-3xl sm:text-4xl md:text-5xl font-black text-primary">
         {display}{suffix}
       </div>
-      <div className="font-mono text-sm text-muted-foreground mt-2 uppercase tracking-wider">{label}</div>
+      <div className="font-mono text-xs sm:text-sm text-muted-foreground mt-2 uppercase tracking-wider">{label}</div>
     </div>
   );
 };
@@ -69,14 +69,14 @@ const LegacySection = () => {
   const { ref, revealed } = useScrollReveal();
 
   return (
-    <section className="py-20 px-4">
+    <section className="py-16 sm:py-20 px-4">
       <div className="container mx-auto max-w-4xl">
         <SectionHeading text="THE LEGACY — JARVIS 1.0" />
         <div
           ref={ref}
-          className={`section-reveal jarvis-panel p-8 md:p-12 mb-10 ${revealed ? "revealed" : ""}`}
+          className={`section-reveal jarvis-panel p-6 sm:p-8 md:p-12 mb-8 sm:mb-10 ${revealed ? "revealed" : ""}`}
         >
-          <p className="font-rajdhani text-lg text-foreground leading-relaxed">
+          <p className="font-rajdhani text-base sm:text-lg text-foreground leading-relaxed">
             Before JARVIS 2.0, we hosted <span className="text-accent font-semibold">JARVIS 1.0</span> — the first edition of this BUILD-A-THON at SLRTCE. It saw massive participation with over 150 teams competing, making it one of the most successful student-run hackathons at the college.
           </p>
           <p className="font-rajdhani text-lg text-foreground leading-relaxed mt-3">

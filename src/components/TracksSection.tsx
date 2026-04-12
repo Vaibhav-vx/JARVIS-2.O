@@ -20,10 +20,10 @@ const TiltCard = ({ track }: { track: typeof tracks[0] }) => {
     >
       <div className="hud-overlay rounded-lg" />
       <div className="relative z-10">
-        <div className="text-4xl mb-3">{track.icon}</div>
-        <h3 className="font-orbitron text-lg font-bold text-primary">{track.name}</h3>
-        {track.sub && <span className="font-mono text-xs text-muted-foreground">{track.sub}</span>}
-        <p className="font-rajdhani text-foreground mt-2">{track.desc}</p>
+        <div className="text-3xl sm:text-4xl mb-3">{track.icon}</div>
+        <h3 className="font-orbitron text-base sm:text-lg font-bold text-primary">{track.name}</h3>
+        {track.sub && <span className="font-mono text-[10px] sm:text-xs text-muted-foreground">{track.sub}</span>}
+        <p className="font-rajdhani text-sm sm:text-base text-foreground mt-2">{track.desc}</p>
       </div>
     </div>
   );
@@ -33,7 +33,7 @@ const TracksSection = () => {
   const { ref, revealed } = useScrollReveal();
 
   return (
-    <section id="tracks" className="py-20 px-4">
+    <section id="tracks" className="py-16 sm:py-20 px-4">
       <div className="container mx-auto max-w-5xl">
         <SectionHeading text="CHOOSE YOUR TRACK" />
         <div

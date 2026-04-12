@@ -84,13 +84,13 @@ const Navbar = () => {
       <div className="nav-line" />
 
       {open && (
-        <div className="md:hidden bg-background/95 backdrop-blur-md border-b border-border px-4 pb-4">
+        <div className="md:hidden bg-background/95 backdrop-blur-xl border-b border-primary/20 px-6 py-8 flex flex-col gap-6 animate-in slide-in-from-top duration-300">
           {navLinks.map((l) => (
             <a
               key={l.href}
               href={l.href}
               onClick={() => setOpen(false)}
-              className="block py-2 font-rajdhani text-sm uppercase tracking-wider text-muted-foreground hover:text-primary"
+              className="font-orbitron text-lg uppercase tracking-widest text-muted-foreground hover:text-primary transition-all active:scale-95"
             >
               {l.label}
             </a>
@@ -99,7 +99,8 @@ const Navbar = () => {
             href="https://forms.gle/9goi52ZgufXZneBk7"
             target="_blank"
             rel="noopener noreferrer"
-            className="jarvis-btn text-xs py-2 px-5 mt-2 inline-block"
+            className="jarvis-btn register-pulse text-sm py-4 px-8 mt-4 text-center"
+            onClick={() => setOpen(false)}
           >
             Register Now
           </a>
