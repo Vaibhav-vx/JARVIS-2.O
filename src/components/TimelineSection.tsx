@@ -10,8 +10,6 @@ const days = [
       { time: "2:00 PM", text: "Event Inauguration & Kickoff" },
       { time: "2:00 – 5:00 PM", text: "Problem Statement Declaration & Explanation (Offline)" },
       { time: "5:00 PM", text: "Online Phase Begins — Hacking Starts!" },
-      { time: "5:00 – 10:00 PM", text: "Teams build, hack, prototype" },
-      { time: "10:00 PM", text: "PPT / Initial Submission Deadline" },
     ],
   },
   {

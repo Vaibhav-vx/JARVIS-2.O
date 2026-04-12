@@ -1,6 +1,5 @@
 import { useState, useCallback } from "react";
 import BootSequence from "@/components/BootSequence";
-import JarvisCursor from "@/components/JarvisCursor";
 import JarvisBackground from "@/components/JarvisBackground";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
@@ -13,6 +12,7 @@ import RegisterSection from "@/components/RegisterSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import SectionDivider from "@/components/SectionDivider";
+import JarvisCursor from "@/components/JarvisCursor";
 
 const Index = () => {
   const [booted, setBooted] = useState(false);

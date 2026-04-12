@@ -10,7 +10,10 @@
       ]
     },
     "skipLibCheck": true,
-    "strictNullChecks": false
+    "strictNullChecks": false,
+    "types": [
+      "node"
+    ]
   },
   "files": [],
   "references": [
