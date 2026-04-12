@@ -1,5 +1,7 @@
 {
-  "css.customData": [],
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
   "css.lint.unknownAtRules": "ignore",
   "scss.lint.unknownAtRules": "ignore",
   "less.lint.unknownAtRules": "ignore",
@@ -10,6 +12,8 @@
     "strings": true
   },
   "tailwindCSS.includeLanguages": {
-    "plaintext": "ts"
+    "plaintext": "ts",
+    "css": "css",
+    "postcss": "css"
   }
 }
