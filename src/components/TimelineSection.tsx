@@ -4,12 +4,12 @@ import { useScrollReveal } from "@/hooks/useJarvisEffects";
 const days = [
   {
     day: "DAY 1", date: "13TH APRIL 2026",
-    badge: "OFFLINE", badgeColor: "bg-destructive/20 text-destructive border-destructive/40",
-    location: "Seminar Hall, SLRTCE",
+    badge: "ONLINE KICKOFF", badgeColor: "bg-primary/20 text-primary border-primary/40",
+    location: "Online — Official Discord / Web Platform",
     events: [
-      { time: "3:00 PM", text: "Event Inauguration & Kickoff" },
-      { time: "3:00 – 6:00 PM", text: "Problem Statement Declaration & Explanation (Offline)" },
-      { time: "6:00 PM", text: "Online Phase Begins — Hacking Starts!" },
+      { time: "3:00 PM", text: "Problem Statements officially declared" },
+      { time: "3:00 – 6:00 PM", text: "Explanation of tracks and PS session (Online)" },
+      { time: "6:00 PM", text: "Actual Online Phase begins — Build-a-thon comes alive! ⚡" },
     ],
   },
   {
