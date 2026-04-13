@@ -2,7 +2,7 @@ import { useEffect, useState, useRef, useCallback } from "react";
 import ArcReactor from "./ArcReactor";
 import { useLetterReveal } from "@/hooks/useJarvisEffects";
 
-const TARGET = new Date("2026-04-13T14:00:00+05:30").getTime();
+const TARGET = new Date("2026-04-13T15:00:00+05:30").getTime();
 
 const FlipDigit = ({ value }: { value: string }) => {
   const prev = useRef(value);

@@ -7,9 +7,9 @@ const days = [
     badge: "OFFLINE", badgeColor: "bg-destructive/20 text-destructive border-destructive/40",
     location: "Seminar Hall, SLRTCE",
     events: [
-      { time: "2:00 PM", text: "Event Inauguration & Kickoff" },
-      { time: "2:00 – 5:00 PM", text: "Problem Statement Declaration & Explanation (Offline)" },
-      { time: "5:00 PM", text: "Online Phase Begins — Hacking Starts!" },
+      { time: "3:00 PM", text: "Event Inauguration & Kickoff" },
+      { time: "3:00 – 6:00 PM", text: "Problem Statement Declaration & Explanation (Offline)" },
+      { time: "6:00 PM", text: "Online Phase Begins — Hacking Starts!" },
     ],
   },
   {
