@@ -39,7 +39,7 @@ const TimelineDay = ({ d, index }: { d: typeof days[0]; index: number }) => {
   return (
     <div ref={ref} className="relative pl-8 sm:pl-12 md:pl-16">
       {/* Dot — blinking */}
-      <div className="absolute left-1.5 sm:left-2.5 md:left-4.5 top-2 blink-dot" />
+      <div className="absolute left-[7px] sm:left-4 top-2 blink-dot" />
 
       <div
         className={`jarvis-panel timeline-draw p-4 sm:p-6 ${revealed ? "revealed" : ""}`}
@@ -75,7 +75,7 @@ const TimelineSection = () => (
       <SectionHeading text="MISSION TIMELINE" />
       <div className="relative">
         {/* Vertical animated dashed line */}
-        <svg className="absolute left-2 sm:left-4 md:left-6 top-0 bottom-0 w-1 h-full" style={{ overflow: "visible" }}>
+        <svg className="absolute left-2 sm:left-4 top-0 bottom-0 w-1 h-full" style={{ overflow: "visible" }}>
           <line
             x1="0" y1="0" x2="0" y2="100%"
             stroke="hsl(190 100% 50% / 0.3)"

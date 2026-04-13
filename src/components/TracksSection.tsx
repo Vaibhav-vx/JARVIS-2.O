@@ -152,7 +152,7 @@ const DomainAccordion = ({ domain, isOpen, onToggle }: { domain: typeof domains[
                           {track.name}
                         </h4>
                         <div className="jarvis-panel p-3 bg-primary/5 border-primary/10 group-hover:border-primary/30 transition-colors">
-                          <p className="font-rajdhani text-[11px] sm:text-sm text-foreground leading-relaxed">
+                          <p className="font-rajdhani text-[11px] sm:text-sm text-foreground leading-relaxed break-words">
                             {track.ideas}
                           </p>
                         </div>
@@ -171,7 +171,7 @@ const DomainAccordion = ({ domain, isOpen, onToggle }: { domain: typeof domains[
 
 const TracksSection = () => {
   const { ref, revealed } = useScrollReveal();
-  const [openIndex, setOpenIndex] = useState<number | null>(0); // Default open Software
+  const [openIndex, setOpenIndex] = useState<number | null>(null); // All closed by default
 
   return (
     <section id="tracks" className="py-16 sm:py-20 px-4">
