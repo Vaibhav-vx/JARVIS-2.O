@@ -2,7 +2,7 @@ import { useEffect, useState, useRef, useCallback } from "react";
 import ArcReactor from "./ArcReactor";
 import { useLetterReveal } from "@/hooks/useJarvisEffects";
 
-const TARGET = new Date("2026-04-13T15:00:00+05:30").getTime();
+const TARGET = new Date("2026-04-15T17:00:00+05:30").getTime();
 
 const FlipDigit = ({ value }: { value: string }) => {
   const prev = useRef(value);
@@ -19,7 +19,7 @@ const FlipDigit = ({ value }: { value: string }) => {
 
   return (
     <div className={`flip-digit inline-block ${flipping ? "flipping" : ""}`}>
-      <span className="digit-inner inline-block font-orbitron text-2xl sm:text-4xl font-bold text-primary">
+      <span className="digit-inner inline-block font-orbitron text-2xl sm:text-4xl font-bold text-[#ff3a3a]">
         {value}
       </span>
     </div>
@@ -99,7 +99,7 @@ const HeroSection = () => {
             { val: time.m, label: "Min" },
             { val: time.s, label: "Sec" },
           ].map((t) => (
-            <div key={t.label} className="jarvis-panel p-3 sm:p-4 min-w-[70px] sm:min-w-[80px] md:min-w-[100px]">
+            <div key={t.label} className="jarvis-panel p-3 sm:p-4 min-w-[70px] sm:min-w-[80px] md:min-w-[100px] border-[#ff3a3a]/30 shadow-[0_0_15px_rgba(255,58,58,0.1)]">
               <div className="flex justify-center gap-1 sm:gap-1.5">
                 <FlipDigit value={t.val[0]} />
                 <FlipDigit value={t.val[1]} />
@@ -109,6 +109,12 @@ const HeroSection = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="mt-8 sm:mt-10 animate-pulse">
+           <h3 className="font-orbitron text-xl sm:text-2xl font-bold text-[#ff3a3a] tracking-[0.3em] drop-shadow-[0_0_10px_rgba(255,58,58,0.5)]">
+             BUILD-A-THON IS LIVE
+           </h3>
         </div>
       </div>
     </section>

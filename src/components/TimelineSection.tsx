@@ -7,6 +7,8 @@ const days = [
     badge: "ONLINE KICKOFF", badgeColor: "bg-primary/20 text-primary border-primary/40",
     location: "Online — Official Discord / Web Platform",
     events: [
+      { time: "10:00 AM", text: "PPT Templates distributed to teams" },
+      { time: "11:00 AM", text: "GitHub repository setup & project work started" },
       { time: "3:00 PM", text: "Problem Statements officially declared" },
       { time: "3:00 – 6:00 PM", text: "Explanation of tracks and PS session (Online)" },
       { time: "6:00 PM", text: "Actual Online Phase begins — Build-a-thon comes alive! ⚡" },
@@ -15,11 +17,12 @@ const days = [
   {
     day: "DAY 2", date: "14TH APRIL 2026",
     badge: "ONLINE", badgeColor: "bg-primary/20 text-primary border-primary/40",
-    location: "Full Online — Build Day",
+    location: "Full Online — Evaluation Phase",
     events: [
-      { time: "All Day", text: "Teams continue building projects online" },
-      { time: "Full Day", text: "Mentoring sessions, prototyping, development" },
-      { time: "", text: "This is your full build day — make it count!" },
+      { time: "12:00 PM", text: "Project PPT submission deadline for all teams" },
+      { time: "1:00 PM", text: "Round 1 Evaluation Period Ends" },
+      { time: "3:00 PM", text: "Round 1 Results Announcement — Top Teams Shortlisted" },
+      { time: "Evening", text: "Shortlisted teams continue development for Final Round" },
     ],
   },
   {
