@@ -83,31 +83,29 @@ const Round1Results = () => {
           />
         </div>
 
-        {/* Scrollable Slider Container */}
-        <div className="relative h-64 overflow-y-auto pr-2 custom-scrollbar jarvis-scrollbar">
-          {filteredTeams.length > 0 ? (
-            <ul className="space-y-2">
-              {filteredTeams.map((team, idx) => (
-                <li
-                  key={idx}
-                  className="font-rajdhani text-sm sm:text-base py-2 border-b border-primary/20 text-foreground flex items-center gap-3 hover:bg-primary/5 transition-colors px-2 rounded"
-                >
-                  <span className="font-mono text-[10px] text-muted-foreground w-6 text-right shrink-0">
-                    {String(shortlistedTeams.indexOf(team) + 1).padStart(2, '0')}.
-                  </span>
-                  <span className={team.includes("🐊") ? "text-green-400" : ""}>{team}</span>
-                  {/* Verified tick for successfully finding their team */}
-                  <span className="ml-auto text-primary text-xs opacity-70">CONFIRMED</span>
-                </li>
-              ))}
-            </ul>
-          ) : (
-            <div className="h-full flex flex-col items-center justify-center text-muted-foreground text-sm font-mono">
-              <span className="mb-2 opacity-50">NO MATCHES FOUND</span>
-              <span className="text-[10px]">VERIFY TARGET DESIGNATION</span>
-            </div>
-          )}
-        </div>
+        {/* Search Results Area */}
+        {search.trim().length > 0 && (
+          <div className="mt-4 pt-4 border-t border-primary/20">
+            {filteredTeams.length > 0 ? (
+              <ul className="space-y-2">
+                {filteredTeams.map((team, idx) => (
+                  <li
+                    key={idx}
+                    className="font-rajdhani text-sm sm:text-base py-2 text-foreground flex items-center gap-3 bg-primary/10 px-3 rounded border border-primary/30"
+                  >
+                    <span className={team.includes("🐊") ? "text-green-400 font-bold" : "font-bold text-primary"}>{team}</span>
+                    <span className="ml-auto text-primary text-xs opacity-70 border border-primary/50 px-2 py-0.5 rounded">QUALIFIED</span>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <div className="py-6 flex flex-col items-center justify-center text-muted-foreground text-sm font-mono text-center">
+                <span className="text-destructive font-bold text-base mb-1">Better Luck Next Time!</span>
+                <span className="text-[10px] opacity-70">TEAM NOT FOUND IN ROUND 1 SHORTLIST</span>
+              </div>
+            )}
+          </div>
+        )}
       </div>
     </div>
   );

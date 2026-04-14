@@ -3,6 +3,7 @@ import ArcReactor from "./ArcReactor";
 import { useLetterReveal } from "@/hooks/useJarvisEffects";
 
 import Round1Results from "./Round1Results";
+import Round2Results from "./Round2Results";
 
 const TARGET = new Date("2026-04-15T17:00:00+05:30").getTime();
 
@@ -121,6 +122,15 @@ const HeroSection = () => {
         
         {/* Round 1 Results specific insertion */}
         <Round1Results />
+        
+        {/* Round 2 Results specific insertion */}
+        <Round2Results />
+        
+        <div className="mt-8">
+           <h4 className="font-orbitron sm:text-lg md:text-xl font-bold text-accent tracking-widest drop-shadow-[0_0_8px_rgba(255,215,0,0.5)]">
+             Welcome The Shortlisted Team In BUILD-A-THON
+           </h4>
+        </div>
         
       </div>
     </section>
