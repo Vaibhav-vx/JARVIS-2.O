@@ -2,6 +2,8 @@ import { useEffect, useState, useRef, useCallback } from "react";
 import ArcReactor from "./ArcReactor";
 import { useLetterReveal } from "@/hooks/useJarvisEffects";
 
+import Round1Results from "./Round1Results";
+
 const TARGET = new Date("2026-04-15T17:00:00+05:30").getTime();
 
 const FlipDigit = ({ value }: { value: string }) => {
@@ -50,7 +52,7 @@ const HeroSection = () => {
   const title = "JARVIS 2.0";
 
   return (
-    <section className="relative min-h-[90vh] sm:min-h-screen flex flex-col items-center justify-center overflow-hidden pt-20 sm:pt-16 px-4">
+    <section className="relative min-h-[90vh] sm:min-h-screen flex flex-col items-center justify-center overflow-hidden pt-20 sm:pt-16 px-4 pb-16">
       <div className="relative z-10 text-center w-full max-w-lg sm:max-w-2xl md:max-w-4xl mx-auto">
         <ArcReactor />
 
@@ -111,11 +113,15 @@ const HeroSection = () => {
           ))}
         </div>
 
-        <div className="mt-8 sm:mt-10 animate-pulse">
+        <div className="mt-8 sm:mt-10 mb-6 animate-pulse">
            <h3 className="font-orbitron text-xl sm:text-2xl font-bold text-[#ff3a3a] tracking-[0.3em] drop-shadow-[0_0_10px_rgba(255,58,58,0.5)]">
              BUILD-A-THON IS LIVE
            </h3>
         </div>
+        
+        {/* Round 1 Results specific insertion */}
+        <Round1Results />
+        
       </div>
     </section>
   );

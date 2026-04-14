@@ -164,6 +164,22 @@
     animation: text-scan 0.8s ease-out forwards;
   }
 
+  /* ─── JARVIS Custom Scrollbar ─── */
+  .jarvis-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+  .jarvis-scrollbar::-webkit-scrollbar-track {
+    background: hsl(190 100% 50% / 0.1);
+    border-radius: 3px;
+  }
+  .jarvis-scrollbar::-webkit-scrollbar-thumb {
+    background: hsl(190 100% 50% / 0.5);
+    border-radius: 3px;
+  }
+  .jarvis-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: hsl(190 100% 50% / 0.8);
+  }
+
   /* ─── Section reveal ─── */
   .section-reveal {
     opacity: 0;
