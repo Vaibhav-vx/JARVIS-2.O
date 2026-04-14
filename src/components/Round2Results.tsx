@@ -72,9 +72,6 @@ const Round2Results = () => {
                   key={idx}
                   className="font-rajdhani text-sm sm:text-base py-2 border-b border-primary/20 text-foreground flex items-center gap-3 hover:bg-primary/5 transition-colors px-2 rounded"
                 >
-                  <span className="font-mono text-[10px] text-muted-foreground w-6 text-right shrink-0">
-                    {String(round2Teams.indexOf(team) + 1).padStart(2, '0')}.
-                  </span>
                   <span className={team.includes("🐊") ? "text-green-400 font-bold" : "font-bold text-primary"}>{team}</span>
                   <span className="ml-auto text-primary text-xs opacity-70 border border-primary/50 px-2 py-0.5 rounded">QUALIFIED</span>
                 </li>
