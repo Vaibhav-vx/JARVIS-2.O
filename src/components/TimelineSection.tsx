@@ -22,7 +22,8 @@ const days = [
       { time: "12:00 PM", text: "Project PPT submission deadline for all teams" },
       { time: "1:00 PM", text: "Round 1 Evaluation Period Ends" },
       { time: "3:00 PM", text: "Round 1 Results Announcement — Top Teams Shortlisted" },
-      { time: "Evening", text: "Shortlisted teams continue development for Final Round" },
+      { time: "7:00 PM", text: "Git commits stopped for Round 2 shortlisting" },
+      { time: "12:00 AM", text: "Round 2 Shortlisted Teams Declared" },
     ],
   },
   {
