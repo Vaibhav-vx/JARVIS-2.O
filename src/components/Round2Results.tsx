@@ -32,6 +32,7 @@ const round2Teams = [
   "Team TARS",
   "Logicloop",
   "Beta Coders",
+  "Team_Clutch",
 ];
 
 const Round2Results = () => {
