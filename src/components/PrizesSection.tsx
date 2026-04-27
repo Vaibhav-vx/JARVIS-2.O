@@ -35,7 +35,7 @@ const PrizesSection = () => {
         </div>
         <div className="mt-6 sm:mt-8 jarvis-panel p-3 sm:p-4 text-center">
           <p className="font-mono text-xs sm:text-sm text-accent">
-            📜 ALL PARTICIPANTS receive a Softcopy Participation Certificate
+            The Winners Of the Jarvis 2.O BUILD-A-THON
           </p>
         </div>
       </div>
